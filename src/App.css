@@ -1,38 +1,101 @@
+:root {
+  --bg-color: #F7E8D3;
+  --panel-bg: #FFFFFF;
+  --text-primary: #2C2C2C;
+  --text-secondary: #555555;
+  --accent-color: #004D61;
+  --nav-bg: #A2B296;
+  --border-color: #D3C5B3;
+  --chart-bg: #FDFBF7;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  max-width: 1200px;
+  margin: 0 auto;
   min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1.5rem 2rem;
+  background-color: var(--nav-bg);
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 2rem;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
-.App-link {
-  color: #61dafb;
+.navbar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1A251C;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-buttons button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #F7E8D3;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.nav-buttons button:hover, 
+.nav-buttons button.active {
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+  border-color: var(--accent-color);
+}
+
+.dashboard-container {
+  padding: 0 20px;
+}
+
+.panel {
+  background-color: var(--panel-bg);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.panel h2 {
+  margin-top: 0;
+  color: var(--text-primary);
+}
+
+.panel p {
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+}
+
+.chart-wrapper {
+  background-color: var(--chart-bg);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px dashed var(--border-color);
+}
+
+text {
+  fill: var(--text-primary) !important;
+  font-size: 12px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
