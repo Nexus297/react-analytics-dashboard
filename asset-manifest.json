@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Nexus297/react-analytics-dashboard/static/css/main.f11268cd.css",
+    "main.js": "/Nexus297/react-analytics-dashboard/static/js/main.11f5292a.js",
+    "static/js/453.7a6bf78e.chunk.js": "/Nexus297/react-analytics-dashboard/static/js/453.7a6bf78e.chunk.js",
+    "index.html": "/Nexus297/react-analytics-dashboard/index.html",
+    "main.f11268cd.css.map": "/Nexus297/react-analytics-dashboard/static/css/main.f11268cd.css.map",
+    "main.11f5292a.js.map": "/Nexus297/react-analytics-dashboard/static/js/main.11f5292a.js.map",
+    "453.7a6bf78e.chunk.js.map": "/Nexus297/react-analytics-dashboard/static/js/453.7a6bf78e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f11268cd.css",
+    "static/js/main.11f5292a.js"
+  ]
+}
